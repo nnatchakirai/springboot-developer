@@ -1,0 +1,5 @@
+INSERT INTO member (id, name) VALUES(1,  '고길동')
+INSERT INTO member (id, name) VALUES(2, '마이콜')
+INSERT INTO member (id, name) VALUES(3, '둘리')
+INSERT INTO member (id, name) VALUES(4, '또치')
+INSERT INTO member (id, name) VALUES(5, '도우너')
