@@ -14,6 +14,9 @@ public class MemberService {
     public List<Member> getAllMembers(){
         return memberRepository.findAll(); // select * from member 명령문을 db내부에 날림
     }
-
+    // 멤버 저장
+    public Member saveMember(Member member) {
+        return memberRepository.save(member);
+    }
 }
 
