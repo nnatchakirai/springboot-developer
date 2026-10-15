@@ -8,7 +8,7 @@ import org.springframework.web.context.annotation.RequestScope;
 
 import java.util.List;
 
-@RequestMapping("/api/members")
+
 @RestController
 public class MemberController {
     @Autowired
@@ -18,8 +18,8 @@ public class MemberController {
     @GetMapping("/member")
     public List<Member> getAllMembers() {
         return memberService.getAllMembers();
-
     }
+
     // 회원정보를 등록하는 요청
     // http://localhost:8080/member 요청을 POST 방식으로 했을 때 회원 등록을 처리하도록 구성
     @PostMapping("/member")
