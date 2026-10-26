@@ -22,7 +22,7 @@ public class QuizController {
     @PostMapping("/quiz")
     public ResponseEntity<String> quizz(@RequestBody Integer code) {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~["+code+"]");
-        switch (code.value()) {
+        switch (code) {
             case 1:
                 return ResponseEntity.status(403).body("Forbidden!"); // .status를 통해 번호를 지정 해 줄 수 있음
             default:
